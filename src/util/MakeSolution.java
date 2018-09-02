@@ -48,6 +48,7 @@ public class MakeSolution {
       writer.write("\n");
       writer.write("public class Solution {\n\n}");
       writer.close();
+
     } catch (IOException e) {
       System.err.println(e);
     }
