@@ -97,11 +97,11 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-//        System.out.println(new Solution().strongPasswordChecker("aaa111"));
-//        System.out.println(new Solution().strongPasswordChecker("aaaaaaaaaaaaaaaaaaaaa"));
-//        System.out.println(new Solution().strongPasswordChecker("abababababababababaaa"));
-//        System.out.println(new Solution().strongPasswordChecker("abAbababababababaaa"));
-//        System.out.println(new Solution().strongPasswordChecker("1Abababcaaaabababababa"));
+//        System.out.println(new Solution.java().strongPasswordChecker("aaa111"));
+//        System.out.println(new Solution.java().strongPasswordChecker("aaaaaaaaaaaaaaaaaaaaa"));
+//        System.out.println(new Solution.java().strongPasswordChecker("abababababababababaaa"));
+//        System.out.println(new Solution.java().strongPasswordChecker("abAbababababababaaa"));
+//        System.out.println(new Solution.java().strongPasswordChecker("1Abababcaaaabababababa"));
         System.out.println(new Solution().strongPasswordChecker("..."));
 
     }

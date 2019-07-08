@@ -1,7 +1,5 @@
 package util;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
@@ -33,12 +31,12 @@ public class MakeSolution {
 
   public static void main(String[] args) {
     String pkgName = getClipboard().replaceAll("-", "_");
-    System.out.println(pkgName);
+    pkgName = "hakerrank." + pkgName;
     if (pkgName.length() == 0) {
       System.exit(-1);
     }
     String cwd = System.getProperty("user.dir");
-    String pkgPath = path("src", pkgName);
+    String pkgPath = path("src", path(pkgName.split("\\.")));
     File pkg = new File(cwd, pkgPath);
     pkg.mkdirs();
 

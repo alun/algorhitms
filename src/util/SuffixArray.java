@@ -59,6 +59,6 @@ public class SuffixArray {
   }
 
   public static void main(String[] args) {
-    System.out.println(new SuffixArray("Hello world").suffixOf("He"));
+    System.out.println(new SuffixArray("Hello world").suffixOf("rl"));
   }
 }

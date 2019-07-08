@@ -1,8 +1,5 @@
 package zigzag_conversion;
 
-import com.sun.java.swing.plaf.windows.WindowsTreeUI;
-
-import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
