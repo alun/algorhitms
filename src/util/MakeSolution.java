@@ -19,7 +19,7 @@ public class MakeSolution {
     Transferable t = clipboard.getContents(null);
     try {
       return (String) t.getTransferData(DataFlavor.stringFlavor);
-    } catch (UnsupportedFlavorException|IOException e) {
+    } catch (UnsupportedFlavorException | IOException e) {
       System.err.println(e);
     }
     return "";
@@ -31,7 +31,9 @@ public class MakeSolution {
 
   public static void main(String[] args) {
     String pkgName = getClipboard().replaceAll("-", "_");
-    pkgName = "hakerrank." + pkgName;
+    pkgName =
+     "hakerrank." +
+        pkgName;
     if (pkgName.length() == 0) {
       System.exit(-1);
     }
