@@ -1,10 +1,10 @@
 package util;
 
-import org.testng.annotations.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
+
+import org.junit.jupiter.api.Test;
 
 public class Prime {
 

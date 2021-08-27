@@ -1,11 +1,12 @@
 package custom.formula_validator;
 
-import org.testng.annotations.Test;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
 import java.util.Optional;
 
-import static org.testng.Assert.*;
+import org.junit.jupiter.api.Test;
 
 enum SymbolType {
   DIGIT, OP, OPEN_PAR, CLOSE_PAR, BEGINNING;

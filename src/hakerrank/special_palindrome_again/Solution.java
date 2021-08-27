@@ -2,8 +2,9 @@ package hakerrank.special_palindrome_again;
 
 // https://www.hackerrank.com/challenges/special-palindrome-again/problem
 
-import org.testng.annotations.Test;
-import static org.testng.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 public class Solution {
 

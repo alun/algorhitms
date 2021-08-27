@@ -1,10 +1,9 @@
 package interleaving_string;
 
-import org.testng.annotations.Test;
-
 import java.util.*;
-import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.LinkedBlockingQueue;
+
+import org.junit.jupiter.api.Test;
 
 public class Solution {
   public boolean isInterleave(String s1, String s2, String s3) {

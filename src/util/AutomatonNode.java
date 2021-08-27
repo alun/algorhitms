@@ -1,14 +1,16 @@
 package util;
 
 import javafx.util.Pair;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import java.util.*;
 import java.util.function.Function;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static util.Edge.DEFAULT;
 import static util.Edge.DIGIT;
+
+import org.junit.jupiter.api.Test;
 
 class Edge {
   Function<String, Optional<String>> rule;
@@ -194,8 +196,8 @@ public class AutomatonNode {
                 oneOrMore(DIGIT))),
         optional("d"));
 
-    Assert.assertTrue(match("+12.3e+13d", number));
-    Assert.assertFalse(match("+12.3e+13fd", number));
+    assertTrue(match("+12.3e+13d", number));
+    assertFalse(match("+12.3e+13fd", number));
   }
 
 }
